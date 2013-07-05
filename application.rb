@@ -6,11 +6,11 @@ require 'data_mapper'
 # require_relative './dm-setup'
 
 class Ddby <Sinatra::Base
-
 	# include DdbyHelpers
 
 	get '/' do
 		'Hello, World!'
+		erb :home
 	end
 
 	get '/login' do
